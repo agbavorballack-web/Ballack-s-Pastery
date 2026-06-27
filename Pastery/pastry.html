@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastry | My Bakery</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 24px;
+            background-color: #fff8ee;
+            background: url('image/Quick & Easy Chocolate Almond Croissants.webp') center/cover no-repeat;
+            background-attachment: fixed;
+            color: #2f241b;
+            font-family: 'Segoe UI', Roboto, Helvetica, sans-serif;
+            line-height: 1.7;
+        }
+
+        .page {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fffdf8;
+            padding: 28px;
+            border-radius: 18px;
+            box-shadow: 0 10px 28px rgba(92, 56, 26, 0.14);
+        }
+
+        h1, h2, h3 {
+            color: #2c1e11;
+            font-family: Georgia, 'Times New Roman', serif;
+            margin-top: 0;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 22px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .nav-links a {
+            display: inline-block;
+            padding: 8px 14px;
+            border-radius: 999px;
+            background: #f7ebdb;
+            color: #7a4521;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background: #8b4513;
+            color: #fff;
+        }
+
+        .hero-card {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 20px;
+            background: #fff9f2;
+            border: 1px solid #efe0c7;
+            border-radius: 22px;
+            padding: 16px;
+            box-shadow: 0 10px 25px rgba(87, 51, 20, 0.12);
+        }
+
+        .hero-image-wrap {
+            overflow: hidden;
+            border-radius: 16px;
+            aspect-ratio: 4 / 3;
+            background: #f4e9db;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+            transition: transform 0.35s ease;
+        }
+
+        .hero-card:hover .hero-image {
+            transform: scale(1.04);
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero-content p {
+            font-size: 1.02rem;
+            margin: 0 0 12px;
+        }
+
+        .cta {
+            display: inline-block;
+            padding: 10px 16px;
+            background: #8b4513;
+            color: #fffdf8;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 6px;
+            width: fit-content;
+        }
+
+        .copy-section {
+            margin-top: 24px;
+        }
+
+        .copy-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 16px;
+            margin-top: 12px;
+        }
+
+        .copy-card {
+            background: #fffdf9;
+            border-radius: 16px;
+            padding: 16px;
+            box-shadow: 0 8px 20px rgba(87, 51, 20, 0.1);
+            border: 1px solid #efe0c7;
+        }
+
+        .copy-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .copy-card p {
+            margin: 0 0 10px;
+        }
+
+        .copy-card .mini-cta {
+            font-weight: bold;
+            color: #7a4521;
+            text-decoration: none;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 14px;
+            margin-top: 24px;
+        }
+
+        .gallery-card {
+            background: #fffdf9;
+            border-radius: 16px;
+            padding: 10px;
+            box-shadow: 0 8px 20px rgba(87, 51, 20, 0.1);
+        }
+
+        .gallery-card img {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 12px;
+            display: block;
+            cursor: zoom-in;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-card:hover img {
+            transform: scale(1.03);
+        }
+
+
+        @media (max-width: 800px) {
+            .hero-card {
+                grid-template-columns: 1fr;
+            }
+
+            .copy-grid,
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page">
+        <h1>Fresh Pastry, Perfectly Baked</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="pastry.html">Pastry</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="delivery.html">Delivery</a></li>
+        </ul>
+
+        <div class="hero-card">
+            <div class="hero-image-wrap">
+                <img class="hero-image" src="image/download.jfif" alt="Fresh pastry fresh from the oven">
+            </div>
+            <div class="hero-content">
+                <h2>Golden, warm, and made fresh today</h2>
+                <p>Every pastry is baked straight from the oven this morning, with flaky layers, buttery aroma, and a crisp golden finish that makes it impossible to resist. 🥐✨</p>
+                <a class="cta" href="menu.html">Taste it fresh today</a>
+            </div>
+        </div>
+
+        <div class="copy-section">
+            <h2>Copy options for your pastry</h2>
+            <div class="copy-grid">
+                <article class="copy-card">
+                    <h3>Short & punchy</h3>
+                    <p>Fresh from the oven today, golden-brown, buttery, and impossible to resist. 🥐✨<br>Come taste the warmth.</p>
+                    <a class="mini-cta" href="menu.html">Try it now</a>
+                </article>
+
+                <article class="copy-card">
+                    <h3>Menu / website style</h3>
+                    <p>Crafted fresh this morning, our pastry features delicate flaky layers, a crisp golden crust, and a melt-in-your-mouth filling that brings comfort in every bite. 🍞</p>
+                    <a class="mini-cta" href="menu.html">Order fresh</a>
+                </article>
+
+                <article class="copy-card">
+                    <h3>Sensory-heavy</h3>
+                    <p>Warm from the oven and glowing with golden-brown charm, this pastry fills the air with a rich buttery aroma and invites you in with its crisp, flaky texture and irresistible sweetness. 😍</p>
+                    <a class="mini-cta" href="menu.html">Visit us today</a>
+                </article>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="gallery-card"><img src="image/Colorful & Delicious Homemade Donuts - Your New Favorite Sweet Treat - Copy.jfif" alt="Fresh bakery donuts"></div>
+            <div class="gallery-card"><img src="image/German Fruit Flan (Obsttorte) Recipe.jfif" alt="Fruit tart dessert"></div>
+            <div class="gallery-card"><img src="image/Muffins are on sale today through July 31st! - Copy.jfif" alt="Fresh muffins on display"></div>
+            <div class="gallery-card"><img src="image/Quick & Easy Chocolate Almond Croissants.webp" alt="Chocolate almond croissants"></div>
+            <div class="gallery-card"><img src="image/download (1).jfif" alt="Soft pastry rolls"></div>
+            <div class="gallery-card"><img src="image/download (2).jfif" alt="Bakery pastry display"></div>
+            <div class="gallery-card"><img src="image/download (3).jfif" alt="Fresh baked pastry close-up"></div>
+            <div class="gallery-card"><img src="image/download.webp" alt="Delicious bakery pastry"></div>
+            <div class="gallery-card"><img src="image/Flan de Queso.webp" alt="Creamy flan dessert"></div>
+            <div class="gallery-card"><img src="image/Apple Hand Pies _ Brown Eyed Baker.webp" alt="Apple hand pies"></div>
+            <div class="gallery-card"><img src="image/Cheesecake Factory Cheesecake.webp" alt="Cheesecake dessert"></div>
+            <div class="gallery-card"><img src="image/Mom’s Cream Puffs.webp" alt="Cream puffs"></div>
+            <div class="gallery-card"><img src="image/Classic French Croissants 101 Guide - Pardon Your French.webp" alt="Classic croissant"></div>
+            <div class="gallery-card"><img src="image/16 Brownie Mix Cookies Boxed Ideas Easy Upgrades.jfif" alt="Brownie dessert"></div>
+            <div class="gallery-card"><img src="image/Simply the Best Blueberry Pie.webp" alt="Blueberry pie"></div>
+            <div class="gallery-card"><img src="image/Crispy Vegan Spring Rolls It's crunch time! With these delicious aromatic deep-fried crispy spring rolls🤩 Follow @plantiful_palate for more recipes🗒️ Recipe_ Ingredients_ - 8 vegan spring roll wrappers - 100g  - Copy.webp" alt="Crispy spring rolls"></div>
+            <div class="gallery-card"><img src="image/Arome Bakery London Review _ ET Food Voyage.jfif" alt="Bakery display"></div>
+            <div class="gallery-card"><img src="image/%23bags.jfif" alt="Bakery bag display"></div>
+        </div>
+    </div>
+
+    <div id="imageModal" class="modal" onclick="closeImage()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeImage()" aria-label="Close image">×</button>
+            <img id="modalImage" src="" alt="Enlarged pastry image">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

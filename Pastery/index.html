@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Bakery</title>
+    </head>
+   <style>
+        body {
+            margin: 0;
+            padding: 24px;
+            background: url('image/Classic French Croissants 101 Guide - Pardon Your French.webp') center/cover no-repeat;
+            background-attachment: fixed;
+            color: #2f241b;
+            font-family: 'Segoe UI', Roboto, Helvetica, sans-serif;
+            line-height: 1.7;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fffdf8;
+            padding: 28px;
+            border-radius: 18px;
+            box-shadow: 0 10px 28px rgba(92, 56, 26, 0.14);
+        }
+
+        h1, h2, h3 {
+            color: #2c1e11;
+            font-family: Georgia, 'Times New Roman', serif;
+            margin-top: 0;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .nav-links li {
+            margin: 0;
+        }
+
+        .nav-links a {
+            display: inline-block;
+            padding: 8px 14px;
+            border-radius: 999px;
+            background: #f7ebdb;
+            color: #7a4521;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background: #8b4513;
+            color: #fff;
+        }
+
+        .intro-card {
+            background: #fff9f2;
+            border: 1px solid #efe0c7;
+            border-radius: 14px;
+            padding: 20px 24px;
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: 1.05rem;
+            margin: 0 0 12px;
+        }
+
+        .menu-button {
+            display: inline-block;
+            background-color: #8b4513;
+            color: #fffdf8;
+            padding: 12px 22px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .menu-button:hover {
+            background-color: #a0522d;
+            transform: translateY(-1px);
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 14px;
+            display: block;
+            margin: 18px 0 20px;
+            box-shadow: 0 8px 20px rgba(92, 56, 26, 0.12);
+        }
+
+        .gallery-section {
+            margin-top: 24px;
+        }
+
+        .section-heading {
+            margin-bottom: 12px;
+        }
+
+        .section-heading h2 {
+            margin: 0 0 6px;
+            font-size: 1.45rem;
+        }
+
+        .section-heading p {
+            margin: 0;
+            color: #6f4a2b;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .gallery-card {
+            background: #fffdf9;
+            border-radius: 20px;
+            padding: 10px;
+            box-shadow: 0 10px 25px rgba(87, 51, 20, 0.12);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-card:hover {
+            transform: translateY(-6px) scale(1.02);
+            box-shadow: 0 16px 35px rgba(87, 51, 20, 0.18);
+        }
+
+        .gallery-image {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 14px;
+            display: block;
+            cursor: zoom-in;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-image:hover {
+            transform: scale(1.03);
+        }
+
+        .gallery-caption {
+            margin-top: 10px;
+            text-align: center;
+            color: #7a4521;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 800px) {
+            .gallery {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+
+        @media (max-width: 500px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+    <body>
+        <div class="page">
+            <h1>Welcome to My Bakery!</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="pastry.html">Pastry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="delivery.html">Delivery</a></li>
+            </ul>
+
+            
+            <div class="intro-card">
+                <p>
+                    There is nothing quite like the smell of <b>fresh bread</b> pulling you through the door.
+                    Every single day, we wake up early to mix, shape, and bake our treats from scratch
+                    using simple, high-quality ingredients.
+                </p>
+                <p>
+                    Whether you are here for your morning pastry, a crusty loaf for dinner, or a little
+                    afternoon sweetness, we are glad to have you.
+                </p>
+                <p><b>Step in, take a breath, and treat yourself.</b></p>
+                <a class="menu-button" href="menu.html">🍰 View our menu</a>
+            </div>
+
+            <section class="gallery-section">
+                <div class="section-heading">
+                    <h2>Fresh delights from our kitchen</h2>
+                    <p>Every bake is crafted with care, warmth, and a little extra sweetness.</p>
+                </div>
+
+                <div class="gallery">
+                    <div class="gallery-card">
+                        <img class="gallery-image" src="image/download.jfif" alt="Fresh bakery pastries">
+                        <div class="gallery-caption">Fresh pastries every morning</div>
+                    </div>
+                    <div class="gallery-card">
+                        <img class="gallery-image" src="image/Colorful & Delicious Homemade Donuts - Your New Favorite Sweet Treat - Copy.jfif" alt="Colorful homemade donuts">
+                        <div class="gallery-caption">Golden donuts with charm</div>
+                    </div>
+                    <div class="gallery-card">
+                        <img class="gallery-image" src="image/Crispy Vegan Spring Rolls It's crunch time! With these delicious aromatic deep-fried crispy spring rolls🤩 Follow @plantiful_palate for more recipes🗒️ Recipe_ Ingredients_ - 8 vegan spring roll wrappers - 100g  - Copy.webp" alt="Crispy spring rolls">
+                        <div class="gallery-caption">Crispy spring rolls</div>
+                    </div>
+                    <div class="gallery-card">
+                        <img class="gallery-image" src="image/download - Copy.webp" alt="Bakery dessert display">
+                        <div class="gallery-caption">Sweet bakery favorites</div>
+                    </div>
+                    <div class="gallery-card">
+                        <img class="gallery-image" src="image/German Fruit Flan (Obsttorte) Recipe.jfif" alt="Fruit flan dessert">
+                        <div class="gallery-caption">Elegant fruit flan</div>
+                    </div>
+                    <div class="gallery-card">
+                        <img class="gallery-image" src="image/Incredible Recipes - Copy.jfif" alt="Delicious baked treats">
+                        <div class="gallery-caption">Irresistible baked treats</div>
+                    </div>
+                    <div class="gallery-card">
+                        <img class="gallery-image" src="image/Muffins are on sale today through July 31st! - Copy.jfif" alt="Fresh muffins on display">
+                        <div class="gallery-caption">Warm muffins for any time</div>
+                    </div>
+                    <div class="gallery-card">
+                        <img class="gallery-image" src="image/Simply the Best Blueberry Pie.webp" alt="Blueberry pie">
+                        <div class="gallery-caption">Classic blueberry pie</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="imageModal" class="modal" onclick="closeImage()">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <button class="modal-close" onclick="closeImage()" aria-label="Close image">×</button>
+                <img id="modalImage" src="" alt="Enlarged bakery item">
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+    </html>
+

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | My Bakery</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 24px;
+            background-color: #fff8ee;
+            background:
+                linear-gradient(135deg, rgba(255, 246, 231, 0.22), rgba(255, 248, 238, 0.16)),
+                url("image/Quick & Easy Chocolate Almond Croissants.webp") center/cover no-repeat;
+            background-attachment: fixed;
+            color: #2f241b;
+            font-family: 'Segoe UI', Roboto, Helvetica, sans-serif;
+            line-height: 1.7;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background: linear-gradient(
+                135deg,
+                rgba(255, 255, 255, 0.08) 0%,
+                rgba(111, 65, 27, 0.12) 50%,
+                rgba(255, 255, 255, 0.08) 100%
+            );
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .page {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fffdf8;
+            padding: 28px;
+            border-radius: 18px;
+            box-shadow: 0 10px 28px rgba(92, 56, 26, 0.14);
+        }
+
+        h1, h2, h3 {
+            color: #2c1e11;
+            font-family: Georgia, 'Times New Roman', serif;
+            margin-top: 0;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 22px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .nav-links a {
+            display: inline-block;
+            padding: 8px 14px;
+            border-radius: 999px;
+            background: #f7ebdb;
+            color: #7a4521;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background: #8b4513;
+            color: #fff;
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1.05fr 0.95fr;
+            gap: 20px;
+            align-items: start;
+        }
+
+        .contact-card, .info-card {
+            background: #fff9f2;
+            border: 1px solid #efe0c7;
+            border-radius: 18px;
+            padding: 20px 22px;
+            box-shadow: 0 10px 25px rgba(87, 51, 20, 0.1);
+        }
+
+        .contact-card h2, .info-card h2 {
+            margin-bottom: 8px;
+        }
+
+        .intro {
+            margin-bottom: 14px;
+            color: #5f4028;
+        }
+
+        form {
+            display: grid;
+            gap: 12px;
+        }
+
+        label {
+            font-weight: 600;
+            color: #6b4627;
+        }
+
+        input, textarea {
+            width: 100%;
+            border: 1px solid #e4cda8;
+            border-radius: 10px;
+            padding: 10px 12px;
+            font: inherit;
+            background: #fffdf9;
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        button {
+            border: none;
+            border-radius: 999px;
+            background: #8b4513;
+            color: white;
+            padding: 11px 18px;
+            font-weight: bold;
+            cursor: pointer;
+            width: fit-content;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            margin: 12px 0 0;
+            display: grid;
+            gap: 10px;
+        }
+
+        .contact-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f2e2cd;
+        }
+
+        .contact-list strong {
+            color: #7a4521;
+        }
+
+        @media (max-width: 800px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <h1>Contact Us</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="delivery.html">Delivery</a></li>
+        </ul>
+
+        <div class="contact-wrapper">
+            <div class="contact-card">
+                <h2>We’d love to hear from you</h2>
+                <p class="intro">Whether you have a question, want to place an order, or simply want to say hello, we’re always happy to help. Reach out and we’ll get back to you soon. 💛</p>
+
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email address">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Tell us how we can help"></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <div class="info-card">
+                <h2>Other ways to reach us</h2>
+                <p class="intro">If you prefer not to use the form, you can contact us directly through any of the options below.</p>
+                <ul class="contact-list">
+                    <li><strong>Email:</strong> hello@mybakery.com</li>
+                    <li><strong>Phone:</strong> +1 (555) 123-4567</li>
+                    <li><strong>Location:</strong> 123 Bakery Street, Downtown</li>
+                    <li><strong>Instagram:</strong> @mybakery</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

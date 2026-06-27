@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | My Bakery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 24px;
+            background-color: #fff8ee;
+            background:
+                linear-gradient(135deg, rgba(255, 246, 231, 0.22), rgba(255, 248, 238, 0.16)),
+                url("image/Healthy Peanut Butter Cookies (grain-free) _ Ambitious Kitchen.webp") center/cover no-repeat;
+            background-attachment: fixed;
+            color: #2f241b;
+            font-family: 'Segoe UI', Roboto, Helvetica, sans-serif;
+            line-height: 1.7;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background: linear-gradient(
+                135deg,
+                rgba(255, 255, 255, 0.08) 0%,
+                rgba(111, 65, 27, 0.12) 50%,
+                rgba(255, 255, 255, 0.08) 100%
+            );
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .page {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fffdf8;
+            padding: 32px;
+            border-radius: 22px;
+            box-shadow: 0 12px 32px rgba(92, 56, 26, 0.16);
+        }
+
+        h1 {
+            color: #2c1e11;
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 2.4rem;
+            text-align: center;
+            margin: 0 0 8px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #8a5a2d;
+            font-size: 1.05rem;
+            margin: 0 0 18px;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 24px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .nav-links a {
+            display: inline-block;
+            padding: 8px 14px;
+            border-radius: 999px;
+            background: #f7ebdb;
+            color: #7a4521;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background: #8b4513;
+            color: #fff;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 24px;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+
+        .about-card {
+            background: #fff9f2;
+            border: 1px solid #efe0c7;
+            border-radius: 18px;
+            padding: 22px 24px;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+        }
+
+        .about-card h2 {
+            margin: 0 0 10px;
+            color: #7a4521;
+            font-size: 1.3rem;
+        }
+
+        .about-card p {
+            font-size: 1.03rem;
+            margin: 0 0 12px;
+        }
+
+        .about-image {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 18px;
+            box-shadow: 0 10px 24px rgba(92, 56, 26, 0.16);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        .info-card {
+            background: #fffdf8;
+            border: 1px solid #e9d8c2;
+            border-radius: 16px;
+            padding: 18px 20px;
+        }
+
+        .info-card h3 {
+            margin: 0 0 8px;
+            color: #2c1e11;
+        }
+
+        .info-card ul {
+            margin: 0;
+            padding-left: 18px;
+        }
+
+        .info-card li {
+            margin-bottom: 6px;
+        }
+
+        @media (max-width: 780px) {
+            .hero,
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-image {
+                height: 260px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <h1>About Our Bakery</h1>
+        <p class="subtitle">A warm, handcrafted experience in every bite.</p>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="delivery.html">Delivery</a></li>
+        </ul>
+
+        <section class="hero">
+            <div class="about-card">
+                <h2>Crafted with love, baked with care</h2>
+                <p>Founded in 2020, My Bakery began as a small passion project and grew into a place celebrated for elegant pastries, artisan breads, and a warm, welcoming atmosphere.</p>
+                <p>Every morning starts before sunrise, as our team mixes, proofs, and bakes each item by hand with care and patience. We believe the finest details make the sweetest experience.</p>
+                <p>From delicate pastries to signature desserts, every creation is made to bring comfort, flavor, and a touch of delight to your day.</p>
+            </div>
+            <img class="about-image" src="image/Colorful & Delicious Homemade Donuts - Your New Favorite Sweet Treat - Copy.jfif" alt="Fresh pastries and bakery treats">
+        </section>
+
+        <section class="info-grid">
+            <div class="info-card">
+                <h3>Our Story</h3>
+                <p>We honor traditional baking methods while adding a modern touch, creating treats that feel timeless, polished, and unmistakably special.</p>
+            </div>
+            <div class="info-card">
+                <h3>What We Promise</h3>
+                <ul>
+                    <li>Freshly baked goods every day</li>
+                    <li>High-quality ingredients and rich flavor</li>
+                    <li>A cozy experience for every guest</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+

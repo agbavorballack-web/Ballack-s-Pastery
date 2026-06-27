@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery | My Bakery</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 24px;
+            background-color: #fff8ee;
+            background:
+                linear-gradient(135deg, rgba(255, 246, 231, 0.2), rgba(255, 248, 238, 0.14)),
+                url("image/download.webp") center/cover no-repeat;
+            background-attachment: fixed;
+            color: #2f241b;
+            font-family: 'Segoe UI', Roboto, Helvetica, sans-serif;
+            line-height: 1.7;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 253, 248, 0.95);
+            padding: 32px;
+            border-radius: 20px;
+            box-shadow: 0 12px 30px rgba(92, 56, 26, 0.16);
+        }
+
+        h1, h2, h3 {
+            color: #2c1e11;
+            font-family: Georgia, 'Times New Roman', serif;
+            margin-top: 0;
+        }
+
+        h1 {
+            font-size: 2.3rem;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 24px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .nav-links a {
+            display: inline-block;
+            padding: 8px 14px;
+            border-radius: 999px;
+            background: #f7ebdb;
+            color: #7a4521;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background: #8b4513;
+            color: #fff;
+        }
+
+        .delivery-card {
+            background: #fff9f2;
+            border: 1px solid #efe0c7;
+            border-radius: 18px;
+            padding: 24px;
+            text-align: center;
+            margin-bottom: 18px;
+        }
+
+        .delivery-card p {
+            font-size: 1.03rem;
+            margin: 0 0 16px;
+            color: #5f4028;
+        }
+
+        .delivery-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .delivery-buttons a {
+            display: inline-block;
+            padding: 12px 18px;
+            border-radius: 999px;
+            background: #8b4513;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .delivery-buttons a:hover {
+            transform: translateY(-2px);
+            background: #a0522d;
+        }
+
+        .delivery-buttons .secondary {
+            background: #7a4521;
+        }
+
+        .delivery-buttons .secondary:hover {
+            background: #8f562d;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+            margin-top: 18px;
+        }
+
+        .info-card {
+            background: #fffdf8;
+            border: 1px solid #e9d8c2;
+            border-radius: 16px;
+            padding: 18px 20px;
+            text-align: left;
+        }
+
+        .info-card h3 {
+            margin: 0 0 8px;
+            font-size: 1.1rem;
+        }
+
+        .info-card ul {
+            margin: 0;
+            padding-left: 18px;
+        }
+
+        .info-card li {
+            margin-bottom: 6px;
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 14px;
+            margin-top: 18px;
+        }
+
+        .step-card {
+            background: #fff9f2;
+            border: 1px solid #efe0c7;
+            border-radius: 16px;
+            padding: 16px;
+            text-align: left;
+        }
+
+        .step-card h3 {
+            margin-bottom: 8px;
+        }
+
+        .faq {
+            margin-top: 18px;
+            background: #fffdf8;
+            border: 1px solid #e9d8c2;
+            border-radius: 16px;
+            padding: 18px 20px;
+        }
+
+        .faq h3 {
+            margin-bottom: 10px;
+        }
+
+        .faq-item {
+            margin-bottom: 10px;
+        }
+
+        .faq-item strong {
+            color: #7a4521;
+        }
+
+        @media (max-width: 800px) {
+            .info-grid,
+            .steps {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <h1>Delivery Made Easy</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="pastry.html">Pastry</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="delivery.html">Delivery</a></li>
+        </ul>
+
+        <div class="delivery-card">
+            <h2>Enjoy your favorites at home</h2>
+            <p>Enjoy your favorite pastries, breads, and desserts from the comfort of your home. We prepare every order with care and deliver it fresh, on time, and in perfect condition.</p>
+            <div class="delivery-buttons">
+                <a href="https://glovoapp.com/" target="_blank" rel="noopener">Order on Glovo</a>
+                <a class="secondary" href="https://wolt.com/" target="_blank" rel="noopener">Order on Wolt</a>
+            </div>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>Delivery Areas</h3>
+                <ul>
+                    <li>We currently deliver within selected neighborhoods and nearby areas.</li>
+                    <li>Same-day delivery is available in supported zones.</li>
+                    <li>Contact us for special requests or larger orders.</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>Delivery Hours & Rates</h3>
+                <ul>
+                    <li>Monday–Friday: 8:00 AM – 8:00 PM</li>
+                    <li>Saturday: 8:00 AM – 10:00 PM</li>
+                    <li>Flat delivery fee: $3.50 or free over $25</li>
+                    <li>Minimum order: $15</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="steps">
+            <div class="step-card">
+                <h3>Step 1: Browse & Order</h3>
+                <p>Choose your favorite pastries, breads, or desserts and place your order online or by phone.</p>
+            </div>
+            <div class="step-card">
+                <h3>Step 2: We Bake & Pack</h3>
+                <p>Each order is freshly baked, carefully packed, and prepared to preserve its quality and flavor.</p>
+            </div>
+            <div class="step-card">
+                <h3>Step 3: Fresh Delivery to Your Door</h3>
+                <p>Your order is delivered promptly and handled with care so it arrives fresh, warm, and ready to enjoy.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-item"><strong>What if I’m not home?</strong><br>We will leave your order in a safe, secure location if permitted, or contact you to arrange an alternative delivery option.</div>
+            <div class="faq-item"><strong>How does tracking work?</strong><br>We provide order updates from preparation to delivery so you can stay informed every step of the way.</div>
+            <div class="faq-item"><strong>How do you keep pastries fresh?</strong><br>Every order is packed carefully to maintain freshness, temperature, and presentation during transit.</div>
+        </div>
+    </div>
+</body>
+</html>

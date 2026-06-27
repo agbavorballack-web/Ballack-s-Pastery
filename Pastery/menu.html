@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | My Bakery</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 24px;
+            background-color: #fff8ee;
+            background: url('image/download (2).jfif') center/cover no-repeat;
+            background-attachment: fixed;
+            color: #2f241b;
+            font-family: 'Segoe UI', Roboto, Helvetica, sans-serif;
+            line-height: 1.7;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fffdf8;
+            padding: 28px;
+            border-radius: 18px;
+            box-shadow: 0 10px 28px rgba(92, 56, 26, 0.14);
+        }
+
+        h1, h2, h3 {
+            color: #2c1e11;
+            font-family: Georgia, 'Times New Roman', serif;
+            margin-top: 0;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .nav-links li {
+            margin: 0;
+        }
+
+        .nav-links a {
+            display: inline-block;
+            padding: 8px 14px;
+            border-radius: 999px;
+            background: #f7ebdb;
+            color: #7a4521;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background: #8b4513;
+            color: #fff;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .menu-card {
+            background: #fff9f2;
+            border: 1px solid #efe0c7;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 18px rgba(92, 56, 26, 0.09);
+        }
+
+        .menu-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            display: block;
+            cursor: zoom-in;
+            transition: transform 0.3s ease;
+        }
+
+        .menu-card img:hover {
+            transform: scale(1.03);
+        }
+
+        .hero-image {
+            cursor: zoom-in;
+        }
+
+        .menu-info {
+            padding: 12px 14px 14px;
+        }
+
+        .menu-info h3 {
+            margin: 0 0 6px;
+            color: #2c1e11;
+            font-size: 1.1rem;
+        }
+
+        .menu-info p {
+            margin: 0 0 10px;
+            color: #6f4a2b;
+            font-size: 0.95rem;
+        }
+
+        .menu-price {
+            display: inline-block;
+            background: #8b4513;
+            color: #fff;
+            padding: 6px 10px;
+            border-radius: 999px;
+            font-weight: bold;
+            font-size: 0.95rem;
+        }
+
+        .note {
+            margin-top: 18px;
+            text-align: center;
+            color: #7a4521;
+            font-style: italic;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 14px;
+            display: block;
+            margin: 16px 0 20px;
+            box-shadow: 0 8px 20px rgba(92, 56, 26, 0.12);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 18px;
+            margin-top: 24px;
+        }
+
+        .gallery-card {
+            background: #fffdf9;
+            border-radius: 20px;
+            padding: 12px;
+            box-shadow: 0 10px 25px rgba(87, 51, 20, 0.12);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-card:hover {
+            transform: translateY(-6px) scale(1.02);
+            box-shadow: 0 16px 35px rgba(87, 51, 20, 0.18);
+        }
+
+        .gallery-image {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 14px;
+            display: block;
+        }
+
+        .gallery-caption {
+            margin-top: 10px;
+            text-align: center;
+            color: #7a4521;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page">
+        <h1>Our Menu</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="pastry.html">Pastry</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="delivery.html">Delivery</a></li>
+        </ul>
+
+        
+
+        <div class="menu-grid">
+            <article class="menu-card">
+                <img src="image/download.jfif" alt="Fresh baked bread">
+                <div class="menu-info">
+                    <h3>Bread</h3>
+                    <p>Golden crust with a soft and fluffy center.</p>
+                    <span class="menu-price">€2.00</span>
+                </div>
+            </article>
+
+            <article class="menu-card">
+                <img src="image/Incredible Recipes - Copy.jfif" alt="Delicious brownies">
+                <div class="menu-info">
+                    <h3>Brownies</h3>
+                    <p>Rich, fudgy, and baked to perfection.</p>
+                    <span class="menu-price">€3.50</span>
+                </div>
+            </article>
+
+            <article class="menu-card">
+                <img src="image/Cheesecake Factory Cheesecake.webp" alt="Sweet cake slice">
+                <div class="menu-info">
+                    <h3>Cakes</h3>
+                    <p>Elegant layers with creamy, indulgent flavor.</p>
+                    <span class="menu-price">€20.00</span>
+                </div>
+            </article>
+
+            <article class="menu-card">
+                <img src="image/16 Brownie Mix Cookies Boxed Ideas Easy Upgrades.jfif" alt="Fresh bakery cookies">
+                <div class="menu-info">
+                    <h3>Cookies</h3>
+                    <p>Soft, buttery, and made for sharing.</p>
+                    <span class="menu-price">€1.50</span>
+                </div>
+            </article>
+
+            <article class="menu-card">
+                <img src="image/Colorful & Delicious Homemade Donuts - Your New Favorite Sweet Treat - Copy.jfif" alt="Freshly baked donuts">
+                <div class="menu-info">
+                    <h3>Donuts</h3>
+                    <p>Glazed, fluffy, and full of bakery charm.</p>
+                    <span class="menu-price">€2.50</span>
+                </div>
+            </article>
+
+            <article class="menu-card">
+                <img src="image/Muffins are on sale today through July 31st! - Copy.jfif" alt="Fresh muffins">
+                <div class="menu-info">
+                    <h3>Muffins</h3>
+                    <p>Warm, tender, and perfect for breakfast.</p>
+                    <span class="menu-price">€3.00</span>
+                </div>
+            </article>
+
+            <article class="menu-card">
+                <img src="image/download (1).jfif" alt="Soft sandwich rolls">
+                <div class="menu-info">
+                    <h3>Sandwich Rolls</h3>
+                    <p>Fluffy rolls ideal for brunch and lunch.</p>
+                    <span class="menu-price">€4.00</span>
+                </div>
+            </article>
+
+            <article class="menu-card">
+                <img src="image/Quick & Easy Chocolate Almond Croissants.webp" alt="Buttery croissants">
+                <div class="menu-info">
+                    <h3>Croissant</h3>
+                    <p>Buttery layers with a crisp, delicate shell.</p>
+                    <span class="menu-price">€2.50</span>
+                </div>
+            </article>
+
+            <article class="menu-card">
+                <img src="image/Crispy Vegan Spring Rolls It's crunch time! With these delicious aromatic deep-fried crispy spring rolls🤩 Follow @plantiful_palate for more recipes🗒️ Recipe_ Ingredients_ - 8 vegan spring roll wrappers - 100g  - Copy.webp" alt="Crispy spring rolls">
+                <div class="menu-info">
+                    <h3>Spring Rolls</h3>
+                    <p>Crunchy, savory, and full of flavor.</p>
+                    <span class="menu-price">€4.50</span>
+                </div>
+            </article>
+
+            <article class="menu-card">
+                <img src="image/German Fruit Flan (Obsttorte) Recipe.jfif" alt="Fruit tart dessert">
+                <div class="menu-info">
+                    <h3>Fruit Tart</h3>
+                    <p>Fresh fruit over a sweet pastry base.</p>
+                    <span class="menu-price">€5.00</span>
+                </div>
+            </article>
+
+            <article class="menu-card">
+                <img src="image/Simply the Best Blueberry Pie.webp" alt="Fresh pie">
+                <div class="menu-info">
+                    <h3>Pies</h3>
+                    <p>Classic comfort baked with flaky pastry.</p>
+                    <span class="menu-price">€6.00</span>
+                </div>
+            </article>
+        </div>
+
+        <p class="note">All of our bread is freshly baked every morning.</p>
+    </div>
+
+    <div id="imageModal" class="modal" onclick="closeImage()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeImage()" aria-label="Close image">×</button>
+            <img id="modalImage" src="" alt="Enlarged bakery item">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
